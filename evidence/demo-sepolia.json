@@ -1,0 +1,76 @@
+{
+  "network": "sepolia",
+  "chainId": "11155111",
+  "contract": "0xf4D4eCc3420495000bbfE6719f22b8F3D8fdcf0E",
+  "deploymentTransactionHash": "0x6311661fc5b586ee4ac5ccf58c99f498ef5f691304e785c407bd8a42be3d045a",
+  "accounts": {
+    "deployer": "0x84773c4dA4B711f38a0Fe524Fad5Ed07bb0C6F4E",
+    "buyer": "0x8f0e4E23A53385a9ab909649C979a04f8bdC78d9",
+    "seller": "0x52556BD7912E20724462b2D074415c928f12b406",
+    "arbiter": "0x4319B170EEeD1655d197AE1905B7735654034fFd"
+  },
+  "accountFunding": {
+    "buyer": {
+      "hash": "0x05031b05614916e9a418adb14dd541cd527ec358f1facbce3a3e746b0707b4d2",
+      "blockNumber": 12147773
+    },
+    "seller": {
+      "hash": "0x7a0ffeec79ecae4565042b41cf55b8c99ee90fca10fc20033dae9c51d0682259",
+      "blockNumber": 12147774
+    },
+    "arbiter": {
+      "hash": "0x1bdda6d53c299c9beb0ec4da287e7ff920698178b213b40f284cd27da5811eba",
+      "blockNumber": 12147775
+    }
+  },
+  "arbiterGrant": {
+    "hash": "0xbbe58682ba9253de41b2c488e487eb376e659dce37a5c120345e69673c35d2df",
+    "blockNumber": 12147776
+  },
+  "normalFlow": {
+    "escrowId": "1",
+    "create": {
+      "hash": "0x0d9fab02a029e9ba2ba8e5f223b607da2da1e372d1919c6379e349a1d0577dc6",
+      "blockNumber": 12147777
+    },
+    "deliver": {
+      "hash": "0x717b4fffff1c9a851044277267540c4115d37fc9c8cf6f9204480edbe8280f69",
+      "blockNumber": 12147778
+    },
+    "release": {
+      "hash": "0xe98a7ba81ea98922f164272516beb0a678395eebfba2480e967d06f560e04f4e",
+      "blockNumber": 12147779
+    },
+    "sellerWithdrawal": {
+      "hash": "0x93ce10b0a9783039d9c26e109fd9169e36c2850f0d07f512b90397a03390f304",
+      "blockNumber": 12147785
+    }
+  },
+  "disputedFlow": {
+    "escrowId": "2",
+    "create": {
+      "hash": "0x9faf79d91dc339645cd95814f5d22f592d28ead9f6c9dc708ed73556de9fc2a7",
+      "blockNumber": 12147780
+    },
+    "deliver": {
+      "hash": "0x88a3f4b23a0bf8428d621733c0c451eb0c8d2a4c20012be29d16c503c0c1eac3",
+      "blockNumber": 12147781
+    },
+    "dispute": {
+      "hash": "0x2fc7d04454ee6986a31151da22c614c1943150df7101fdad841f4e2ae747da67",
+      "blockNumber": 12147782
+    },
+    "resolve": {
+      "hash": "0x69dd163777fd21c032aa02f2db9b94e7b9ac5fe60eb5bd9866725c70e62d4b22",
+      "blockNumber": 12147784
+    },
+    "buyerWithdrawal": {
+      "hash": "0x98423f3a1009d1b0ff063dc376fc834d0ab444525d10e5cac44e82f2748f0558",
+      "blockNumber": 12147786
+    },
+    "arbiterWithdrawal": {
+      "hash": "0x206f9172209d4b90d91926c6d4d5280aaabdac26b9337dd574f43a0ea4ffb2d1",
+      "blockNumber": 12147788
+    }
+  }
+}

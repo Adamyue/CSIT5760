@@ -1,0 +1,78 @@
+npm warn Unknown env config "devdir". This will stop working in the next major version of npm.
+
+> safetrade-escrow@1.0.0 test
+> hardhat test
+
+
+
+  SafeTradeEscrow
+    deployment and roles
+      √ sets the administrator, pauser, constants, and first ID (447ms)
+      √ rejects a zero administrator
+      √ lets the administrator grant and revoke arbiter eligibility
+      √ rejects role management by a non-administrator
+      √ rejects pause by an account without the pauser role
+    creation and validation
+      √ creates a funded escrow and emits complete creation data
+      √ increments IDs across multiple escrows
+      √ accepts the minimum delivery window
+      √ accepts the maximum delivery window
+      √ rejects zero funding
+      √ rejects zero seller
+      √ rejects zero arbiter
+      √ rejects buyer as seller
+      √ rejects buyer as arbiter
+      √ rejects same seller and arbiter
+      √ rejects an empty terms hash
+      √ rejects an ineligible arbiter
+      √ rejects a delivery window shorter than one hour
+      √ rejects a past deadline
+      √ rejects a delivery window longer than 90 days
+      √ rejects unknown escrow IDs
+    delivery and deadline transitions
+      √ records delivery evidence and starts a three-day review
+      √ rejects delivery by a non-seller
+      √ rejects an empty delivery hash
+      √ rejects duplicate delivery marking
+      √ allows delivery immediately before its deadline
+      √ rejects delivery exactly at its deadline
+      √ rejects buyer timeout immediately before delivery deadline
+      √ refunds the buyer exactly at the delivery deadline
+    normal settlement and refunds
+      √ lets the buyer confirm delivery and credits the seller
+      √ rejects receipt confirmation by a non-buyer
+      √ rejects confirmation from Funded and after final settlement
+      √ lets the seller refund from Funded
+      √ lets the seller refund from Delivered
+      √ lets the seller refund from Disputed
+      √ rejects seller refund by another account and after settlement
+      √ rejects timeout refund by a non-buyer
+      √ rejects timeout refund from a delivered state
+      √ lets the seller claim exactly at the review deadline
+      √ rejects seller claim immediately before review deadline
+      √ rejects review claim by a non-seller and in a dispute
+    disputes
+      √ lets the buyer dispute before review expiry
+      √ rejects disputes by a non-buyer, from a wrong state, and at expiry
+      √ lets the buyer withdraw a dispute by confirming receipt
+      √ splits the post-fee amount and conserves all value
+      √ accepts the 0 basis-point boundary
+      √ accepts the 10000 basis-point boundary
+      √ handles a one-wei escrow without losing value to rounding
+      √ rejects a share above 10,000 basis points
+      √ rejects an unassigned arbiter and a non-disputed state
+      √ preserves the authority of an assigned arbiter after role revocation
+    withdrawal, accounting, and emergency behaviour
+      √ withdraws a pending payment with checks-effects-interactions
+      √ rejects withdrawal with no pending balance
+      √ restores accounting when a recipient rejects ETH
+      √ prevents recursive withdrawal from receiving a second payment
+      √ maintains balance >= locked + pending through mixed escrows
+      √ rejects ordinary direct and fallback ETH transfers
+      √ treats forcibly sent ETH as unallocated excess
+      √ pause blocks only new admission; existing settlement and withdrawal continue
+      √ supports a delegated pauser and resumes creation after unpause
+      √ rejects unpause while active and pause while already paused
+
+
+  61 passing (1s)

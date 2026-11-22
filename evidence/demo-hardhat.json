@@ -1,0 +1,59 @@
+{
+  "network": "hardhat",
+  "chainId": "31337",
+  "contract": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "deploymentTransactionHash": "0x4305a3c0a3584a944de16dc1dd3c502821abf8da7760f5c2c03d301ef9360e96",
+  "accounts": {
+    "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "buyer": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "seller": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+    "arbiter": "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+  },
+  "accountFunding": {},
+  "normalFlow": {
+    "escrowId": "1",
+    "create": {
+      "hash": "0x4eeed4a8fdd5245ca37eb86981af753189dfce686e629e77a9d4342102dc32c2",
+      "blockNumber": 3
+    },
+    "deliver": {
+      "hash": "0xf4741ecf823274ad97aa31307f2c409ddc87b8656329e70a1d4d5c0ced1f0451",
+      "blockNumber": 4
+    },
+    "release": {
+      "hash": "0x1f6ed83fa74eebb9e07f51a67c3c9d11d8fa08e5b18e948b6f426bac14067260",
+      "blockNumber": 5
+    },
+    "sellerWithdrawal": {
+      "hash": "0xfef395cd2cf5cb0ad2f0f1d094bc5244eef5a0fe5e4411a3a00aabaefba2a9d5",
+      "blockNumber": 10
+    }
+  },
+  "disputedFlow": {
+    "escrowId": "2",
+    "create": {
+      "hash": "0x4d28910203803bcda70725881a49613c4e48c3ccc8bd129113d93cd0e9e80be3",
+      "blockNumber": 6
+    },
+    "deliver": {
+      "hash": "0x7975940a6788f00316fce38ba93f689075588a821e97c5df18e45c26df181ce5",
+      "blockNumber": 7
+    },
+    "dispute": {
+      "hash": "0xf8e18972f92cf38daac6d2f7a863c088abe46c43d5455148e21dd6ba80aaa56b",
+      "blockNumber": 8
+    },
+    "resolve": {
+      "hash": "0x8d7b5aa99d1c21c0f8a4db4a3ca24ab43c2a3874ba2d6d604ae516e0eed1f83f",
+      "blockNumber": 9
+    },
+    "buyerWithdrawal": {
+      "hash": "0x3af3a74fd30840f220bb24f957059255fa9b74c76e49ffb0328a54cf55d77c80",
+      "blockNumber": 11
+    },
+    "arbiterWithdrawal": {
+      "hash": "0x182d5ffb796f5df05c159a458586b781f9608e5e82c7145771e80771958bf8bb",
+      "blockNumber": 12
+    }
+  }
+}
