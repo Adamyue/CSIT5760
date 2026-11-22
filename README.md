@@ -156,9 +156,8 @@ contract balance >= totalLocked + totalPending
 - Forced ETH remains unallocated excess.
 - ETH only; no ERC-20, NFT, oracle, upgradeability, or production front end.
 
-## Third-party code and AI disclosure
+## Third-party code
 
 OpenZeppelin `AccessControl`, `Pausable`, and `ReentrancyGuard` are used under
 their published license. Hardhat and ethers provide development/deployment
-support. Cursor AI assisted with implementation and documentation; YUE Pu is
-responsible for review, testing, security decisions, and explaining all work.
+support.
